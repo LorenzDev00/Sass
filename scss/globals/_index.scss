@@ -1,0 +1,7 @@
+//Use a index.scss file in each subfolder of SCSS folder
+
+@forward 'boilerplate';
+@forward 'typography';
+@forward 'colors';
+
+//The forward keyword "pushes" all the code from the partials into the main.scss file

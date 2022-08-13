@@ -1,0 +1,24 @@
+.grid {
+    //Parent container
+    display: grid;
+    grid-template-columns: 1fr; //1fr stands for one column
+    grid-template-rows: auto auto;
+    gap: 40px; //creatin a space of 40px between all cells 
+
+    @media
+
+    &__main,
+    &__sidebar {
+        padding: 40px;
+    }
+
+    &__main {
+        //Child container
+        background-color: hsl(240, 100%, 32%);
+    }
+
+    &__sidebar {
+        //Child container
+        background-color: hsl(300, 100%, 29%);
+    }
+}

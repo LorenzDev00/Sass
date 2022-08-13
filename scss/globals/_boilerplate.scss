@@ -1,0 +1,22 @@
+//These are general styles for the webpage
+
+//@use is needed to load sass modules into a file
+
+@use '../util'; //Defining the module folder as a namespace
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, 
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: util.$font; //util is the namespace and $font the module name
+    background-color: var(--backround-color);
+    color: var(--text-color);
+}
