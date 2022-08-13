@@ -1,11 +1,13 @@
 .grid {
     //Parent container
     display: grid;
-    grid-template-columns: 1fr; //1fr stands for one column
+    grid-template-columns: 1fr; //1fr stands for one column dimension
     grid-template-rows: auto auto;
     gap: 40px; //creatin a space of 40px between all cells 
 
-    @media
+    @media (min-width: 900px){
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;   
 
     &__main,
     &__sidebar {
